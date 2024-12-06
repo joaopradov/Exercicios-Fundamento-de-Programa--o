@@ -9,7 +9,26 @@ FIX05_EX04: Faça um programa em Linguagem C que peça o salário de 8 funcioná
 */
 
 #include <stdio.h>
-int main() {
+#define tam 8
 
+int main() {
+    float sal[tam], soma = 0, media = 0;
+    int ind = 0;
+
+    for (ind = 0; ind < tam; ind++)
+    {
+        scanf("%f", &sal[ind]);
+        soma = soma + sal[ind];
+    }
+
+    printf("\nSalarios: ");
+    for (ind = 0; ind < tam; ind++)
+    {
+        printf("%.2f | ", sal[ind]);
+    }
+    
+    media = soma / tam;
+    printf("\nMedia de salario: %.2f", media);
+    
     return 0;
 }

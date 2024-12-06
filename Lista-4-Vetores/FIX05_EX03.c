@@ -14,7 +14,33 @@ Maior: 16
 */
 
 #include <stdio.h>
+#define tam 5
 int main() {
+    int num[tam], ind = 0, maior = 0;
 
+    for (ind= 0; ind < tam; ind++)
+    {
+        scanf("%d", &num[ind]);
+    }
+
+    printf("Original: ");
+    for (ind = 0; ind < tam; ind++)
+    {
+        printf("%d - ", num[ind]);
+    }
+    
+    maior = num[0];
+
+    for (ind = 0; ind < tam; ind++)
+    {
+        if (num[ind] > maior)
+        {
+            maior = num[ind];
+        }
+    }
+
+    printf("\nMaior = %d", maior);
+    
+    
     return 0;
 }

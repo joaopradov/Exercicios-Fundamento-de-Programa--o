@@ -16,7 +16,31 @@ alterado.: 5 _ 15 _ 9 _ 16 _ 8
 */
 
 #include <stdio.h>
+#define tam 5
+
 int main() {
+
+    int num[tam], ind = 0, aux = 0;
+
+    for(ind = 0; ind < tam; ind++){
+        scanf("%d", &num[ind]);
+    }
+
+    printf("\nOriginal: ");
+    for ( ind = 0; ind < tam; ind++)
+    {
+        printf("%d - ", num[ind]);
+    }
+
+    printf("\nAlterado: ");
+    aux = num[0];
+    num[0] = num[tam - 1];
+    num[tam - 1] = aux;
+    for (ind = 0; ind < tam; ind++)
+    {
+        printf("%d - ", num[ind]);
+    }
+    
 
     return 0;
 }
