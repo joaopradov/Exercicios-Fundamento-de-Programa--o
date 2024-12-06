@@ -17,3 +17,21 @@ alterado.: 5 _ 15 _ 9 _ 16 _ 8
 
 #include <stdio.h>
 #define tam 5
+int main(){
+
+    int num[tam], ind = 0;
+
+    for (ind = 0; ind < tam; ind++)
+    {
+        scanf("%d", &num[ind]);
+    }
+    
+    printf("... mostrando na ordem inversa...\n");
+    for (ind = tam - 1; ind >= 0 ; ind--)
+    {
+        printf("%d - ", num[ind]);
+    }
+    
+
+    return 0;
+}
