@@ -19,6 +19,16 @@ não existem números repetidos.
 
 #include <stdio.h>
 int main() {
+    int numeros[20];
+    int repetido;
+    int n;
+
+    for (n = 0; n < 20; n++)
+    {
+        scanf("%d", &numeros[n]);
+    }
+    
+    
 
     return 0;
 }

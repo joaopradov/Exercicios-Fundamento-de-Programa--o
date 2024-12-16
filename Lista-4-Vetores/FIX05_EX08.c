@@ -10,6 +10,7 @@ FIX05_EX08: Faça um programa em Linguagem C para obter dois conjuntos (vetores)
 
 #include <stdio.h>
 int main() {
+    int A[8], B[8], C[8];
 
     return 0;
 }

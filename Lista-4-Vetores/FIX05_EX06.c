@@ -17,6 +17,7 @@ Mais próximo: 9.99 (apresenta a menor diferença até o valor da média)
 */
 
 #include <stdio.h>
+#include <math.h>
 int main() {
 
     return 0;
