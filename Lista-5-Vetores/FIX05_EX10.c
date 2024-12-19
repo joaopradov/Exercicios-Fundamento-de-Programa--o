@@ -20,15 +20,44 @@ não existem números repetidos.
 #include <stdio.h>
 int main() {
     int numeros[20];
-    int repetido;
-    int n;
+    int repetido, indAt, indComp;
+    int encontrado[20] = {0};
+    int algumRepetido = 0;
 
-    for (n = 0; n < 20; n++)
-    {
-        scanf("%d", &numeros[n]);
+    printf("Digite 20 numeros inteiros:\n");
+    for (indAt = 0; indAt < 20; indAt++) {
+        scanf("%d", &numeros[indAt]);
     }
-    
-    
+
+    printf("\nVerificando numeros repetidos:\n");
+
+    for (indAt = 0; indAt < 20; indAt++) {
+        if (encontrado[indAt]) {
+            continue;
+        }
+
+        repetido = 0;
+        
+        for (indComp = indAt + 1; indComp < 20; indComp++) {
+            if (numeros[indAt] == numeros[indComp]) {
+                if (!repetido) {
+                    printf("O numero %d esta repetido nas posicoes: %d", numeros[indAt], indAt + 1);
+                    repetido = 1;
+                    algumRepetido = 1;
+                }
+                printf(" - %d", indComp + 1);
+                encontrado[indComp] = 1;
+            }
+        }
+
+        if (repetido) {
+            printf("\n");
+        }
+    }
+
+    if (!algumRepetido) {
+        printf("\nNao existem numeros repetidos.\n");
+    }
 
     return 0;
 }

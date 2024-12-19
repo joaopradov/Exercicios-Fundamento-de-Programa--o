@@ -20,5 +20,31 @@ Mais próximo: 9.99 (apresenta a menor diferença até o valor da média)
 #include <math.h>
 int main() {
 
+    float numeros[5], soma = 0, media, maisProximo;
+    int ind, indMaisProximo;
+
+    for(ind = 0; ind < 5; ind++)
+    {
+        scanf("%f", &numeros[ind]);
+        soma += numeros[ind];
+    }
+
+    media = soma / 5;
+    printf("Media: %.2f\n", media);
+
+    maisProximo = numeros[0];
+    indMaisProximo = 0;
+
+    for(ind = 0; ind < 5; ind++)
+    {
+        if (fabs(numeros[ind] - media) < fabs(maisProximo - media))
+        {
+            maisProximo = numeros[ind];
+            indMaisProximo = ind;
+        }
+    }
+
+    printf("Mais proximo da media: %.2f (numero na posicao %d)\n", maisProximo, indMaisProximo );
+
     return 0;
 }
