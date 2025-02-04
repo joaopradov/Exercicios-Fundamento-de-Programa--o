@@ -13,3 +13,20 @@ Casos de teste:
 212 graus Fahrenheit é igual a 100 graus Celsius;
 86 graus Fahrenheit é igual a 30 graus Celsius. 
 */
+
+#include <stdio.h>
+
+float FahParaCels(float f){
+    return ((f - 32) / 9) * 5;
+}
+
+int main(){
+    float tempF;
+    printf("Digite a temperatura em Fahrenheit: ");
+    scanf("f", &tempF);
+
+    float celsius;
+    celsius = FahParaCels(tempF);
+
+    printf("A temperatura de %.2f Fahrenheit convertida fica %.2f Celsius.", tempF, celsius);
+}
