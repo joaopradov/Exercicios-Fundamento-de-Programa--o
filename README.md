@@ -15,7 +15,7 @@ Este repositório foi criado para armazenar e organizar as listas de exercícios
 ## Estrutura do Repositório
 
 O repositório está organizado da seguinte forma:
-/
+```plaintext
 ├── Lista1/ # Pasta da Lista 1
 │ ├── FIX01-EX01.c # Código do Exercício 1
 │ └── FIX01-EX02.c # Código do Exercício 2
@@ -23,3 +23,4 @@ O repositório está organizado da seguinte forma:
 │ └── FIX02-EX01.c # Código do Exercício 1
 ├── ...
 └── README.md # Este arquivo
+```
