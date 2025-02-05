@@ -22,14 +22,14 @@ Entre com a opção:
 #include <stdio.h>
 
 void mostrarMenu(){
-    printf("**********");
-    printf("Calculadora");
-    printf("1. Adição");
-    printf("2. Subtração");
-    printf("3. Multiplicação");
-    printf("4. Divisão");
-    printf("5. Sair");
-    printf("**********");
+    printf("**********\n");
+    printf("Calculadora\n");
+    printf("1. Adição\n");
+    printf("2. Subtração\n");
+    printf("3. Multiplicação\n");
+    printf("4. Divisão\n");
+    printf("5. Sair\n");
+    printf("**********\n");
 }
 
 void adicao(int n1, int n2){
