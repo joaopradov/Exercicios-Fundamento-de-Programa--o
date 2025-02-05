@@ -29,7 +29,7 @@ int main(){
     printf("Digite o ano: ");
     scanf("%d", &Data.ano);
 
-    printf("A data digitada foi %.2d/%.2d/%.4d",Data.dia, Data.mes, Data.ano);
+    printf("A data digitada foi o dia %.2d do mes %.2d, e do ano %.4d",Data.dia, Data.mes, Data.ano);
 
     return 0;
 }
