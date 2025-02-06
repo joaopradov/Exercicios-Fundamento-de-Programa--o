@@ -8,7 +8,6 @@ FIX09_EX06: Construa uma função que recebe 2 (duas) datas como parâmetro (str
 */
 
 #include <stdio.h>
-#include <stdbool.h>
 
 struct Data
 {
@@ -19,3 +18,31 @@ struct Data
 
 typedef struct Data Data;
 
+int Bissexto(int ano){
+    if ((ano % 4 == 0 && ano % 100 != 0) || ( ano % 400 == 0)){
+        return 1;
+    }
+    return 0;
+}
+
+int diasAno(Data dia []){
+    int dias = 0;
+
+    int mesNormal[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; 
+
+    int mesBissexto[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    
+}
+
+int main(){
+
+    Data data1, data2;
+
+    printf("Digite a primeira data (dia mes ano): ");
+    scanf("%d %d %d", data1.dia, data1.mes, data1.ano);
+
+    printf("Digite a segunda data (dia mes ano): ");
+    scanf("%d %d %d", data2.dia, data2.mes, data2.ano);
+
+    return 0;
+}
