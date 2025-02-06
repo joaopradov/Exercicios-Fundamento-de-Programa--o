@@ -31,8 +31,20 @@ int diasAno(Data dia []){
     int mesNormal[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; 
 
     int mesBissexto[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-    
+
+    /* Porque esta dando erro?
+    for (int i = 0; i < Data.mes - 1; i++)
+    {
+        if (Bissexto(Data.ano))
+        {
+            dias += mesBissexto[i];
+        } else {
+            dias += mesNormal[i];
+        }
+    } */
 }
+
+
 
 int main(){
 
@@ -43,6 +55,10 @@ int main(){
 
     printf("Digite a segunda data (dia mes ano): ");
     scanf("%d %d %d", data2.dia, data2.mes, data2.ano);
+
+    int diferenca;
+    //diferenca = diferencaDias;
+    printf("A diferenca em dias de uma data a outra é %d dias", diferenca);
 
     return 0;
 }
